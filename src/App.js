@@ -1,13 +1,19 @@
-import  Header from "./Header"
+import { useState } from "react";
+import Header from "./Header"
+import Main from "./Main"
+import Footer from  "./Footer"
 const App = () => {
 return(
     <>
-        <Header/>
-        <footer>
-            <p>Esto es el footer</p>
-        </footer>
+        <Header 
+            nombre="Ricardo" 
+            apellido="Garrido"
+            edad={33}
+            callback={()=>{console.log(("soy un callback de app"));}}
+            />
+        <Main/>
+        <Footer/>
     </>
 )
 };
-
 export default App

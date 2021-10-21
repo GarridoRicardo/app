@@ -8,7 +8,7 @@ html , body {
     height: 100vh;
 };
 
-#main-header{
+#header {
     padding: 0.5rem 1rem;
     background-color: aquamarine;
     display: flex;
