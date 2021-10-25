@@ -1,13 +1,17 @@
 import { useState } from "react";
 
-const ItemCount = () => {
+const ItemCount = ({initial,stock}) => {
 
-    const [contador, setcontador] = useState(0)
+    const [contador, setcontador] = useState(initial)
     const sumarContador = () =>{
+        if(contador < stock){
             setContador(contador + 1)
-    }
+    }}
+
     const restarContador = () =>{
-        setcontador(contador - 1)
+        if(contador > 0){
+            setContador(contador - 1)
+    }
     }
     
     return (
